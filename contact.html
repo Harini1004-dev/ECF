@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Formulaire</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Quatre Pattes</a><img src="Images/logo-blanc.png" class="logo-blanc"></div>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">Contact</a></li>
+                <button><a href"#"><img src="Images/heart.png">Faire un don</a></button>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Contactez-nous</h2>
+    <section class="Formulaire">
+    <div id="Form">
+
+    <form id="myForm" onsubmit="return validateForm()">
+        
+        <label for="username">Nom</label><br>
+        <input type="text" id="username">
+        <div id="error-username" class="error"></div>
+        <br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email">
+        <div id="error-email" class="error"></div>
+        <br>
+
+        <label for="subject">Sujet</label><br>
+        <select name="sujet" id="subject">
+            <option>Faire un don</option>
+            <option>Devenir bénévole</option>
+            <option>Questions</option>
+            <option>Autres</option>
+        </select><br>
+        <div id="error-subject" class="error"></div>
+        <br>
+
+        <label for="message">Message</label><br>
+        <input type="message" id="message">
+        <div id="error-username" class="error"></div>
+        <br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
+</section>
+
+<section class="Footer">
+    <div class="footer-section">
+        <h3>Quatre Pattes</h3>
+        <p>Ensemble, protégeons les animaux et donnons-leur une vie meilleure.</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+            <img id="foot" height="24px" width="24px" src="Images/mail 1.png">
+            contact@quatrepattes.org
+        </p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Suivez-nous</h3>
+    </div>
+</section>
+</body>
+<script src="scriptB.js"></script>
+   
+
+    
